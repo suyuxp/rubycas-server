@@ -351,6 +351,24 @@ database:
 # See the SQL authenticator notes above for more info.
 #
 #
+# === Mail Authentication ======================================================
+#
+# Example:
+#
+#authenticator:
+#  class: CASServer::Authenticators::Mail
+#  mail:
+#      server: mail.example.com
+#      auth_type: login
+#    mongo:
+#      server: localhost
+#      db: user_db
+#      doc: user_table
+#    extra_attributes:
+#      displayName: name
+#      email: email
+#
+#
 # === Custom Authentication ====================================================
 #
 # It should be relatively easy to write your own Authenticator class. Have a look
