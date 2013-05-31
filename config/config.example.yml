@@ -369,6 +369,18 @@ database:
 #      email: email
 #
 #
+# === Active Directory Authentication =========================================
+#
+# Example:
+#
+#authenticator:
+#  class: CASServer::Authenticators::ActiveDirectoryAuth
+#  ad:
+#    domain: example.system
+#    server: server_ip
+#    base: cn=users,dc=example,dc=system
+#
+#
 # === Custom Authentication ====================================================
 #
 # It should be relatively easy to write your own Authenticator class. Have a look
